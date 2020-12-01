@@ -23,32 +23,30 @@
     <div class="container">This is going to be a fluid container. It will go full width of page. With some margin</div>
     <h3>@centered container</h3>
     <div class="container container-center">This is going to be a centered container. It will go till a given width and center content</div>
-    <br><br>
     <hr>
 
     <h2>@links</h2>
     <a href="/" class="link link-primary">Primary Link</a>
     <a href="/" class="link link-secondary">Secondary Link</a>
-    <br><br>
     <hr>
     <h2>@lists</h2>
     <h3>unordered lists</h3>
     <p>We don't want to show bullets in the unordered list. We'll remove that with CSS</p>
-    <ul>
+    <ul class="list-nobullet">
         <li>one</li>
         <li>two</li>
         <li>three</li>
     </ul>
     <h3>inline lists</h3>
     <p>Instead of going in a new row, we will create a list which will take columns</p>
-    <ul>
-        <li>one</li>
-        <li>two</li>
-        <li>three</li>
+    <ul class="list-nobullet">
+        <li class="list-item-inline">one</li>
+        <li class="list-item-inline">two</li>
+        <li class="list-item-inline">three</li>
     </ul>
     <h3>reverse ordered lists</h3>
     <p>Counting of list will go reverse for this list</p>
-    <ol>
+    <ol reversed>
         <li>mark Three</li>
         <li>mark Two</li>
         <li>mark One</li>
@@ -56,37 +54,53 @@
     <hr>
     <h2>@nav</h2>
     <p>Navigation is used on the top of the page and used to get to different pages</p>
-    <nav>
-        <div>theBrandName</div>
-        <ul>
-            <li>nav link one</li>
-            <li>nav link two</li>
-            <li>nav link three</li>
+    <nav class="navigation container">
+        <div class="nav-brand">theBrandName</div>
+        <ul class="list-nobullet nav-links">
+            <li class="list-item-inline">
+                <a class="link link-active" href="/">nav link one</a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link" href="/">nav link two</a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link" href="/">nav link three</a>
+            </li>
         </ul>
     </nav>
     <hr>
     <h3>@header</h3>
-    <img src="images/hero.svg" alt="">
-    <h1>this is heading h1 inside header</h1>
+    <header class="hero">
+        <img class="hero-img" src="images/hero.svg" alt="">
+        <h1 class="hero-heading">this is <span class="highlighted">heading</span> h1 inside header</h1>
+    </header>
     <hr>
     <h2>@section</h2>
     <p>A section is used to separate parts of pages.</p>
     <h3>@normal section</h3>
-    <section>
-        <h2>heading inside normal section</h2>
+    <section class="section">
+        <h1>heading inside normal section</h1>
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
     </section>
     <h3>@off white section</h3>
-    <section>
-        <h2>heading inside off white section section</h2>
+    <section class="section ow">
+        <h1>heading inside off white section section</h1>
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
     </section>
     <hr>
     <h2>@footer</h2>
-    <footer>
-        <h3>Heading inside footer</h3>
-        <ul>
-            <li>Social one</li>
-            <li>Social Two</li>
-            <li>Social three</li>
+    <footer class="footer">
+        <h3 class="footer-heading">Heading inside footer</h3>
+        <ul class="social-links list-nobullet">
+            <li class="list-item-inline">
+                <a class="link" href="/">Social one</a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link" href="/">Social two</a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link" href="/">Social three</a>
+            </li>
         </ul>
     </footer>
 </body>
